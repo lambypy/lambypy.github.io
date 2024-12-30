@@ -1,0 +1,517 @@
+/* General Reset */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+}
+
+
+/* Header and Navigation */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+    padding: 0 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+
+
+
+/* About Section Styling */
+.about-wrapper {
+    display: flex;
+    justify-content: center;  /* Centers the image horizontally */
+    align-items: center;      /* Centers the image vertically */
+    height: 100;             /* Ensures wrapper takes up full height */
+}
+
+.profile-photo {
+    width: 300px;
+    height: auto;
+    border-radius: 50%; /* Makes the image circular */
+    border: 3px solid #ddd;
+    margin-bottom: 1rem;
+}
+
+.about-wrapper p {
+    max-width: 600px;
+    color: #555;
+}
+
+
+.profile-photo:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+@media (max-width: 600px) {
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+
+/* Links Styling */
+.about-links {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.about-link {
+    display: inline-block;
+    padding: 0.5rem 1rem; /* Adds padding for the rounded shape */
+    font-size: 1rem;
+    color: #333; /* White text color */
+    background-color: #f3f3f3; /* Primary blue background */
+    border-radius: 20px; /* Fully rounded edges */
+    text-decoration: none; /* Removes underline */
+    font-weight: 500; /* Slightly bold */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.about-link:hover {
+    background-color: #0073e6; /* Light blue background on hover */
+    color: #fff; 
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+
+
+/* Experience Section */
+
+#experience h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   /* Center the cards horizontally */
+    gap: 1.5rem;               /* Adds space between the cards */
+    padding: 0 1rem;           /* Adds space around the container */
+}
+
+
+/* Tags for Experience */
+.experience-tags {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.experience-tags .tag {
+    display: inline-block;
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark text color */
+    font-size: 0.85rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 12px; /* Rounded edges for the tags */
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.company-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.company-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    margin-right: 1.5rem;
+    border: 1px solid #ddd;
+}
+
+.company-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.company-info h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #222;
+}
+
+.company-info .time-spent {
+    font-size: 0.9rem;
+    color: #888;
+    margin: 0.5rem 0;
+}
+
+.company-info .description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    margin-top: 0.5rem;
+}
+
+
+
+.skills {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+
+
+
+
+
+
+
+/* General Link Styling */
+.company-link {
+    text-decoration: none;
+    color: inherit; /* Use the same color as surrounding text */
+    transition: color 0.3s ease;
+}
+
+.company-link:hover {
+    color: #007bff; /* Optional: Change color on hover */
+}
+
+/* Styling for Company Logo */
+.company-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-right: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.company-logo:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+
+/* Styling for Task List */
+.company-tasks {
+    margin-top: 0.5rem;
+    padding-left: 1.5rem; /* Indent the list */
+    list-style-type: disc; /* Default bullet points */
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.company-tasks li {
+    margin-bottom: 0.5rem; /* Add space between list items */
+}
+
+.company-tasks li:last-child {
+    margin-bottom: 0; /* Remove margin for the last item */
+}
+
+
+
+/* Content Sections */
+section {
+    padding: 4rem 2rem;
+}
+
+.content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #222;
+}
+
+.content p {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+/* Projects Grid */
+.projects .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.project-item {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.project-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: #f1f1f1;
+    color: #555;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+
+
+
+/* Projects Section */
+#projects h2, #stuff-ive-done h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+
+
+/* Subtle Category Title Styling */
+.category-title {
+    font-size: 1rem;
+    color: #555; /* Subtle gray */
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: left;
+    padding-left: 0.5rem;
+    border-left: 3px solid #ddd; /* Subtle vertical line to highlight category */
+    margin-left: 18%; 
+}
+
+
+
+/* Category Styling */
+.project-category {
+    margin-bottom: 2rem;
+}
+
+.project-category h3 {
+    font-size: 1.8rem;
+    color: #222;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+
+
+.project-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.project-list li {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.project-list a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.project-list a:hover {
+    color: #0056b3;
+}
+
+
+.project-description {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+}
+
+
+
+/* Tags Styling */
+.tags {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap; /* Wrap tags to the next line if there are too many */
+    gap: 0.5rem; /* Space between tags */
+}
+
+.tag {
+    display: inline-block;
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark text color */
+    font-size: 0.85rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 12px; /* Rounded edges for the tags */
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tag:hover {
+    background-color: #0073e6; /* Light blue background on hover */
+    color: #fff; /* White text on hover */
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* Stuff I've Done Section */
+.stuff-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.stuff-wrapper p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.stuff-list {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.stuff-list li {
+    margin-bottom: 0.5rem;
+}
+
+.stuff-list li:last-child {
+    margin-bottom: 0;
+}
+
+
+
+/* Timeline Structure */
+.timeline {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.year {
+    margin-bottom: 2rem;
+    border-left: 4px solid #007bff;
+    padding-left: 1rem;
+}
+
+.year h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 0.5rem;
+}
+
+/* Achievements List */
+.achievements {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.achievements li {
+    margin-bottom: 0.5rem;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .year h3 {
+        font-size: 1.3rem;
+    }
+
+    .achievements {
+        font-size: 0.9rem;
+    }
+}
+

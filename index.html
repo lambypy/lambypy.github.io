@@ -1,148 +1,311 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header class="main-header">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+				<li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#stuff-ive-done">Stuff I've Done</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<html>
-	<head>
-		<title>Daniel Lambert</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="landing is-preload">
+    <!-- About Section -->
+    <section id="about">
+        <div class="content">
+            <h2>Daniel Lambert</h2>
+            <div class="about-wrapper">
+				<img src="images/linkPhoto.jpg" alt="Myself" class="profile-photo">
+			</div>
+			<p>Software Engineer in the Core Banking Platform at Lloyds Banking Group</p>
+        </div>
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+		<!-- Links Section -->
+		<div class="about-links">
+			<a href="https://github.com/lambypy" target="_blank" class="about-link">GitHub</a>
+			<a href="https://www.linkedin.com/in/daniel-lambert-cs/" target="_blank" class="about-link">LinkedIn</a>
+			<a href="mailto:danbudcs@gmail.com" class="about-link">Email</a>
+			<a href="https://codeforces.com/profile/lambyy" target="_blank" class="about-link">CodeForces</a>
+			<a href="" target="_blank" class="about-link">Kaggle</a>
+			<a href="resume.pdf" target="_blank" class="about-link">Resume</a>
+		</div>
+    </section>
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">Daniel Lambert</a></h1>
-					</header>
+	<!-- Experience Section -->
+	<section id="experience">
+		<h2>Experience</h2>
 
-				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-							<h2>Daniel Lambert</h2>
-							<ul class="actions special">
-							</ul>
-						</div>
-						<a href="#one" class="more scrolly">More about me</a>
-					</section>
-
-				<!-- One (About Me / Education) -->
-					<section id="one" class="wrapper style1 special">
-						<div class="inner">
-							<header class="major">
-								<h2>About Me</h2>
-								<p>I'm currently finishing up a Masters Degree in Computer Science at the University of York, with a graduation date of January 2024 and a grade of 2:1 (3.8 GPA).
-									I will also be interning at Balyasny Asset Management this summer as a Software Engineer in London.
-									<br><br>
-									Please check out my experience and projects below!
-								</p>
-							</header>
-							<ul class="icons major">
-								<p><a href="mailto:danbudcs@gmail.com"> Email</a> | <a href="https://docs.google.com/document/d/11ae8yUVqEuI_HjbVW0kdNRVR7kmnwfjwRFVFhNVjVJ0/edit?usp=sharing"> Resume</a> | <a href="https://github.com/lambypy"> GitHub</a> | <a href="https://www.linkedin.com/in/daniel-lambert98/"> LinkedIn</a></p>
-							</ul>
-						</div>
-					</section>
-
-				<!-- Two (Employment) -->
-					<section id="two" class="wrapper alt style2">
-						<section class="spotlight">
-							<div class="image"><img src="images/bam_2.png" alt="" /></div><div class="content">
-								<h2>Balyasny Asset Management</h2>
-								<p>Software Engineer Intern - Market DataJune - August 2023</p>
-
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/popdpt_logo.png" alt="" /></div><div class="content">
-								<h2>Popdot</h2>
-								<p>Software Engineer Intern | May - October 2022</p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
-								<h2>CodingForKids</h2>
-								<p>Computer Science Tutor | September 2021 - April 2022</p>
-								<p>• Created a computer science curriculum for students interested in science and technology, resulting in 96% of students being interested in pursuing a career in STEM.</p>
-								<p>• Designed a series of lectures and programming workshops to teach object-oriented programming in Java.</p>
-							</div>
-						</section>
-					</section>
-
-				<!-- Three (Projects) -->
-					<section id="three" class="wrapper style3 special">
-						<div class="inner">
-							<header class="major">
-								<h2>Projects</h2>
-								<p>Here are some of the projects that I have been working on:</p>
-							</header>
-							<ul class="features">
-								<li class="icon fa-paper-plane">
-									<h3>Cryptocurrency Trader Bot <a href="https://github.com/lambypy/Cryptocurrency-Trader">[Link]</a></h3>
-									<p>.</p>
-									<p>Technologies used: C++, Python, SQL, Dash, Pandas, matplotlib</p>
-								</li>
-								<li class="icon solid fa-laptop">
-									<h3>Interdate <a href="https://github.com/lambypy/Cryptocurrency-Trader">[Link]</a></h3>
-									<p>.</p>
-									<p>Technologies used: Java, Swift, Python, CSS, JavaScript, Android Studio, XCode</p>
-								</li>
-								<li class="icon solid fa-code">
-									<h3>MyCaml <a href="https://github.com/lambypy/MyCaml">[Link]</a></h3>
-									<p>A custom compiler created using OCaml to understand more about the language and building compilers.</p>
-									<p>Technologies used: OCaml</p>
-								</li>
-								<li class="icon solid fa-headphones-alt">
-									<h3>BoltWR <a href="">[Link]</a></h3>
-									<p>A supervised Machine Learning model aimed at beating world record times on video games.</p>
-									<p>Technologies used: Python</p>
-								</li>
-								<li class="icon fa-heart">
-									<h3>Combinify <a href="https://github.com/lambypy/Combinify">[Link]</a></h3>
-									<p>An aggregation of news articles for the most factually correct summarized stories on the most important topics.</p>
-									<p>Technologies used:</p>
-								</li>
-								<li class="icon fa-flag">
-									<h3>FireFlash <a href="https://github.com/lambypy/FireFlash">[Link]</a></h3>
-									<p>A smart flash card application for language learning, study practice and more using memorization techniques.</p>
-									<p>Technologies used:</p>
-								</li>
-								<li class="icon fa-code">
-									<h3>InsoSearch <a href="">[Link]</a></h3>
-									<p>An improved search engine with no placed advertisements and more personalized directed results based on preferences.</p>
-									<p>Technologies used:</p>
-								</li>
-								<li class="icon fa-code">
-									<h3>Olympic Games Predictor <a href="">[Link]</a></h3>
-									<p>An application that predicts the medal table by country and participant of future Olympic Games.</p>
-									<p>Technologies used: Python, Pandas</p>
-								</li>
-							</ul>
-						</div>
-					</section>
-
-
-				<!-- Four (Skills and Achievements) -->
-				<section id="three" class="wrapper style4 special">
-					<div class="inner">
-						<header class="major">
-							<h2>Skills & Achievements</h2>
-							<p>Languages: C++, Python, Java, OCaml, SQL</p>
-							<p>Tools & Technologies: Git, Linux, AWS, Hadoop, GraphQL, MongoDB, Docker, Kubernetes</p>
-						</header>
+		<!-- Lloyds Banking Group -->
+		<div class="company-card">
+			<a href="https://www.lloydsbank.com/" target="_blank" class="company-link">
+				<img src="images/lloydslogo.jpeg" alt="Lloyds Banking Group Logo" class="company-logo">
+			</a>
+			<div class="company-info">
+				<a href="https://www.lloydsbank.com/" target="_blank" class="company-link">
+					<h3>Lloyds Banking Group</h3>
+				</a>
+				<p class="time-spent">September 2024 - present</p>
+				<p class="description">
+					Software Engineer | Core Banking Platform
+					<ul class="company-tasks">
+						<li>Automated the versioning of software components across build systems on GCP and GitHub through a Python script, resulting in faster software delivery.</li>
+						<li>Created an application to reduce colleague onboarding time by up to 75% resulting in increased productivity.</li>
+						<li>Participated in several labs to improve the production of customer targeted features through the banking app.</li>
+					</ul>
+					
+					<!-- Skills Section -->
+					<div class="experience-tags">
+						<span class="tag">Python</span>
+						<span class="tag">Java</span>
+						<span class="tag">Kubernetes</span>
+						<span class="tag">PostgreSQL</span>
+						<span class="tag">GCP</span>
 					</div>
-				</section>
+				</p>
+			</div>
+		</div>
+
+		<!-- Balyasny Asset Management -->
+		<div class="company-card">
+			<a href="https://www.bamfunds.com/" target="_blank" class="company-link">
+				<img src="images/BAM_logo.jpeg" alt="Balyasny Asset Management Logo" class="company-logo">
+			</a>
+			<div class="company-info">
+				<a href="https://www.bamfunds.com/" target="_blank" class="company-link">
+					<h3>Balyasny Asset Management</h3>
+				</a>
+				<p class="time-spent">June - August 2023</p>
+				<p class="description">
+					Software Engineer Intern | Market Data Team
+					<ul class="company-tasks">
+						<li>Leveraged Python to generate market data information on 750+ future & options contract expirations and spreads.</li>
+						<li>Automated the generation of 25,000+ lines of CSV output with trading information across 5 exchanges.</li>
+						<li>Reduced program execution time by 70% through improving an internal data extraction API.</li>
+						<li>Accomplished adding 50+ future contract ruleset exceptions encoded in JSON format for unified and faster filtering.</li>
+						<li>Collaborated with another team in scaling the coverage of exchange venues to capture additional future contracts and
+							options using C++ and Python.</li>
+					</ul>
+
+					<!-- Skills Section -->
+					<div class="experience-tags">
+						<span class="tag">Python</span>
+						<span class="tag">C++</span>
+					</div>
+				</p>
+			</div>
+		</div>
+
+		<!-- Popdot -->
+		<div class="company-card">
+			<a href="" target="_blank" class="company-link">
+				<img src="images/popdpt_logo.png" alt="Popdot Logo" class="company-logo">
+			</a>
+			<div class="company-info">
+				<a href="" target="_blank" class="company-link">
+					<h3>Popdot</h3>
+				</a>
+				<p class="time-spent">May - September 2022</p>
+				<p class="description">
+					Software Engineer Intern | Microservices Team
+					<ul class="company-tasks">
+						<li>Created API endpoints using Django for efficient user account creation and retrieving key user details.</li>
+						<li>Designed a JSON validation script using Python to find duplicate login credentials for preventing multiple user
+							accounts, reducing sign-up errors by 35%.</li>
+						<li>Improved Swagger documentation for internal APIs, leading to a reduction of 25% in developer search time.</li>
+						<li>Collaborated with the data management team to improve error response codes for detecting application bugs.</li>
+					</ul>
+
+					<!-- Skills Section -->
+					<div class="experience-tags">
+						<span class="tag">Java</span>
+						<span class="tag">Python</span>
+						<span class="tag">Django</span>
+						<span class="tag">Spring Boot</span>
+					</div>
+				</p>
+			</div>
+		</div>
+	</section>
+
+
+    <!-- Projects Section -->
+	<section id="projects">
+		<h2>Projects</h2>
+
+		<div class="project-category">
+			<!-- ML Related Projects -->
+			<p class="category-title">ML</p>
+			<ul class="project-list">
+				<li>
+					<a href="https://github.com/lambypy" target="_blank" class="project-title">BoltWR</a>
+					<p class="project-description">ML models aim for world records in common games.</p>
+					<div class="tags">
+						<span class="tag">Python</span>
+						<span class="tag">PyTorch</span>
+						<span class="tag">Pandas</span>
+					</div>
+				</li>
+				<li>
+					<a href="https://github.com/yourmlproject2" target="_blank" class="project-title">To do</a>
+					<p class="project-description">To do</p>
+					<div class="tags">
+						<span class="tag">To do</span>
+					</div>
+				</li>
+			</ul>
+
+			<!-- Gaming Related Projects -->
+			<p class="category-title">Gaming</p>
+				<ul class="project-list">
+				<li>
+					<a href="https://github.com/lambypy" target="_blank" class="project-title">Propeller Penguin</a>
+					<p class="project-description">A 2D platformer</p>
+					<div class="tags">
+						<span class="tag">C++</span>
+					</div>
+				</li>
+				<li>
+					<a href="https://github.com/lambypy" target="_blank" class="project-title">Castle Conquest</a>
+					<p class="project-description">A large scale 3D single player war game.</p>
+					<div class="tags">
+						<span class="tag">Java</span>
+					</div>
+				</li>
+			</ul>
+		
+			<!-- Financial Related Projects -->
+			<p class="category-title">Financial</p>
+				<ul class="project-list">
+				<li>
+					<a href="https://github.com/lambypy" target="_blank" class="project-title">Automated Trading Bot</a>
+					<p class="project-description">Trading dashboard across live cryptocurrency exchanges and backtesting financial data.</p>
+					<div class="tags">
+						<span class="tag">Python</span>
+						<span class="tag">TensorFlow</span>
+						<span class="tag">Pandas</span>
+					</div>
+				</li>
+				</ul>
+			
+			<!-- Full Stack Projects -->
+			<p class="category-title">Full Stack</p>
+				<ul class="project-list">
+				<li>
+					<a href="https://github.com/lambypy" target="_blank" class="project-title">Find Your Home</a>
+					<p class="project-description">An interactive application for finding the best homes in your target location utilizing ML models</p>
+					<div class="tags">
+						<span class="tag">Python</span>
+						<span class="tag">Django</span>
+						<span class="tag">JavaScript</span>
+					</div>
+				</li>
+				</ul>
+			
+			<!-- Robotics Related Projects -->
+			<p class="category-title">Robotics</p>
+				<ul class="project-list">
+				<li>
+					<a href="https://github.com/yourmlproject2" target="_blank" class="project-title">To do</a>
+					<p class="project-description">To do</p>
+					<div class="tags">
+						<span class="tag">To do</span>
+					</div>
+				</li>
+				</ul>
+			<p class="category-title">Scientific</p>
+				<ul class="project-list">
+				<li>
+					<a href="https://github.com/yourmlproject2" target="_blank" class="project-title">To do</a>
+					<p class="project-description">To do</p>
+					<div class="tags">
+						<span class="tag">To do</span>
+					</div>
+				</li>
+				</ul>
+
+			<!-- Other Projects -->
+			<p class="category-title">Other</p>
+				<ul class="project-list">
+				<li>
+					<a href="https://github.com/lambypy" target="_blank" class="project-title">ReadableNumbers</a>
+					<p class="project-description">A project for simplifying the readability on large numbers.</p>
+					<div class="tags">
+						<span class="tag">Python</span>
+						<span class="tag">TensorFlow</span>
+						<span class="tag">Pandas</span>
+					</div>
+				</li>
+				<li>
+					<a href="https://github.com/lambypy/SolarSystemGravitation" target="_blank" class="project-title">Solar System Gravitation</a>
+					<p class="project-description">An interactive application for simulating gravitational forces in the Solar System.</p>
+					<div class="tags">
+						<span class="tag">Python</span>
+						<span class="tag">TensorFlow</span>
+						<span class="tag">Pandas</span>
+					</div>
+				</li>
+				</ul>
+		</div>
+	</section>
+	
+
+	<!-- Stuff I've done Section-->
+	<section id="stuff-ive-done">
+		<h2>Stuff I've Done</h2>
+		<div class="timeline">
+			<!-- 2025 -->
+			<div class="year">
+				<h3>2025</h3>
+				<ul class="achievements">
+					<li>To be added!</li>
+				</ul>
 			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
 
-	</body>
+			<!-- 2024 -->
+			<div class="year">
+				<h3>2024</h3>
+				<ul class="achievements">
+					<li>Joined <a href="https://www.lloydsbank.com/" target="_blank" class="company-link">Lloyds Banking Group</a> as a Software Engineer in the Core Banking Platform.</li>
+					<li>Graduated with a Masters in Computer Science from the <a href="https://www.york.ac.uk/" target="_blank" class="company-link">University of York.</a></li>
+					<li>Moved to Manchester, UK.</li>
+					<li>Reached a total of 600 Computer Programming Questions completed (across LeetCode, CodeForces, AtCoder).</li>
+				</ul>
+			</div>
+			
+			<!-- 2023 -->
+			<div class="year">
+				<h3>2023</h3>
+				<ul class="achievements">
+					<li>Moved to London, UK over summer for internship.</li>
+					<li>Joined <a href="https://www.bamfunds.com/" target="_blank" class="company-link">Balyasny Asset Management</a> as a Software Engineer Intern on the Market Data team.</li>
+				</ul>
+			</div>
+			
+			<!-- 2022 -->
+			<div class="year">
+				<h3>2022</h3>
+				<ul class="achievements">
+					<li>Curated learning presentations and workshops for remote Computer Science lessons to children as a tutor.</li>
+					<li>Raised £4000+ for a local charity as a volunteer eCommerce Manager.</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	
+    <!-- Footer -->
+    <footer>
+        <p>© Daniel Lambert 2025</p>
+    </footer>
+</body>
 </html>
+
